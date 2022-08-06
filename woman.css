@@ -135,6 +135,22 @@ nav .nav-list li a{
     justify-content: center;
    
   }
+  .reset{
+    margin-left: 100px;
+    background-color:palevioletred;
+  
+}
+.submit{
+    margin-left: 100px;
+    background-color:palevioletred;
+  
+}
+.butns {
+    display: flex;
+    flex-direction: row;
+    justify-items:self-end;
+  
+  }
 nav .nav-list li:not(:last-child) a:hover{
     color: #c41d11;
     transition: .4s;
@@ -203,6 +219,7 @@ nav .nav-list li.btn:hover a{
         display: block;
 
     }
+    
     nav .nav-list li a{
         display: block;
         text-align: center;
