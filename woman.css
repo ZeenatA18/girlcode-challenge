@@ -29,47 +29,84 @@
     color: palevioletred;
     border-radius: 50%;
     display: inline-flex;
-    align-items:center ;
+    align-self: start;
     justify-content: center;
+    margin-right: 25em;
     font-size: 20px;
     cursor: pointer;
 }
 
-nav .hamb{
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #84a59d ;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    margin-right: 5em;
+}
+
+nav ul li{
+    font-family: century;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: palevioletred;
+    padding: 10px 45px;
+    transition: all .5s ease;
+}
+
+nav ul li a:hover{
+    background-color: #f28482;
+    color: black;
+    box-shadow: 0 0 10px #f28482;
+}
+
+/* nav .hamb{
     width: 35px;
     height: 24px;
     right: 3%;
     top:60px ;
     z-index: 5;
     /* background: transparent; */
-    position: absolute;
+    /* position: absolute;
     cursor:pointer ;
-    display: none;
+    display: none; */
     /* background-color: white; */
-}
-nav .hamb span{
+/* } */
+/* nav .hamb span{
     display: block;
     background: #c41d11;
     width: 100%;
     height: 3px;
     transition: .3s;
     /* transition-property: transform opacity ; */
-}
-nav .hamb span:nth-child(2){
+/* } */
+/* nav .hamb span:nth-child(2){
     margin: 7px 0px;
-}
-hr{
+} */
+/* hr{
     border-color: pink;
-}
+} */
 
-nav .nav-list{
+/* nav .nav-list{
     list-style: none;
 
-}
-nav .nav-list li{
+} */
+/* nav .nav-list li{
     display: inline-block;
-}
-nav .nav-list li a{
+} */
+
+/* nav .nav-list li a{
     display: inline-block;
     color:black;
     margin-left: 100px;
@@ -77,7 +114,7 @@ nav .nav-list li a{
     font-size: 15px;
     font-weight:600 ;
 
-}
+} */
 /* .emergencydiv{
     width: 50px;
     height: 60px;
@@ -93,6 +130,7 @@ nav .nav-list li a{
     box-shadow: 0 2px 4px darkslategray;
     cursor: pointer;
     transition: all 0.2s ease;
+  
   }
 
   .emergency:active {
