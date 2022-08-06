@@ -61,13 +61,101 @@ l>
             <div class="buttons">
                 <!-- <div class="emergency"><input type="button" value="New On This Site ?" >  -->
                 <div class="emergencydiv">
-                    <button class="emergency">&#9893;</button>
+                    <button class="emergency">SOS</button>
                 </div>
+                <label for="media">
+                    recording type
+                    </label>
+                    <select id="media"> -->
+                         <option value="choose-an-option"> 
+                            Choose an option
+                        </option> -->
+                        <option value="vid">Video</option>
+                        <option value="aud">Audio</option>
+                        <!-- <div class="languages"  id="media">
+                        <input type="radio" name="radioButn"   value="vidtype">Video
+                        <input type="radio" name="radioButn"   value="audtype">Audio
+                    </div>  -->
+                    </select>
+
+
+
+                    
                 
+                    <div class="display-none" id="vid-recorder">
+                        <h3>Record Video </h3>
+                        <video autoplay id="web-cam-container"
+                            style="background-color: black;">
+                            Your browser doesn't support
+                            the video tag
+                        </video>
+                
+                        <div class="recording" id="vid-record-status">
+                    
+                        </div>
+                
+                        
+                        <button type="button" id="start-vid-recording"
+                            onclick="startRecording(this,
+                            document.getElementById('stop-vid-recording'))">
+                            Start video recording
+                        </button>
+                
+                        
+                        <button type="button" id="stop-vid-recording"
+                            disabled onclick="stopRecording(this,
+                            document.getElementById('start-vid-recording'))">
+                            Stop video recording
+                        </button>
+                
+                        <!--The video element will be created using
+                            JavaScript and contains recorded video-->
+                        <!-- <video id="recorded-video" controls>
+                            Your browser doesn't support the video tag
+                        </video> -->
+                
+                        <!-- The below link will let the
+                            users download the recorded video -->
+                        <!-- <a href="" > Download it! </a> -->
+                    </div>
+                
+                    <div class="display-none" id="aud-recorder">
+                        <h3> Record Audio</h3>
+                
+                        <div class="recording" id="aud-record-status">
+                            
+                            button to start recording
+                        </div>
+                
+                        <button type="button" id="start-aud-recording"
+                            onclick="startRecording(this,
+                            document.getElementById('stop-aud-recording'))">
+                            Start recording
+                        </button>
+                
+                        <button type="button" id="stop-aud-recording"
+                            disabled onclick="stopRecording(this,
+                            document.getElementById('start-aud-recording'))">
+                            Stop recording
+                        </button>
+                
+                        <!-- The audio element will contain the
+                            recorded audio and will be created
+                            using Javascript -->
+                        <!-- <audio id="recorded-audio"
+                            controls></audio> -->
+                
+                        <!-- The below link will let the users
+                            download the recorded audio -->
+                        <!-- <a href="" > Download it! </a> -->
+                    </div>
+                
+                   
             </div>
+
             <div class="butns">
-            <button type="submit" class="submit">Greet</button>
-            <button type="reset" class="reset">Reset</button>
+            <button type="submit" style="width: 100px;" class="submit">CALL</button>
+            <button type="reset" class="reset"  style="width: 100px;  margin-right:100px ;">TEXT</button>
         </div>
 
     </section>
@@ -92,7 +180,7 @@ l>
 <section class="Chatspace" id="chatspace"></section>
        
 
-
+<script src="./js/woman.dom.js"></script>
 
 </body>
 

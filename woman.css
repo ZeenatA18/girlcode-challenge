@@ -29,9 +29,9 @@
     color: palevioletred;
     border-radius: 50%;
     display: inline-flex;
-    align-self: start;
+    align-items:center;
     justify-content: center;
-    margin-right: 25em;
+    margin-right: 20em;
     font-size: 20px;
     cursor: pointer;
 }
@@ -119,8 +119,43 @@ nav ul li a:hover{
     width: 50px;
     height: 60px;
 } */
+body {
+	text-align: center;
+	color: palevioletred;
+	font-size: 1.2em;
+}
+
+.display-none {
+	display: none;
+}
+
+.recording {
+	color: red;
+	background-color:palevioletred;
+	padding: 5px;
+	margin: 6px auto;
+	width: fit-content;
+}
+
+video {
+	background-color: black;
+	display: block;
+	margin: 6px auto;
+	width: 420px;
+	height: 240px;
+}
+
+audio {
+	display: block;
+	margin: 6px auto;
+}
+
+a {
+	color: palevioletred;
+}
+
 .emergency{
-    background-color: #FFC0CB;
+    background-color: palevioletred;
     color: white;
     border: none;
     padding: 5px;
@@ -145,6 +180,9 @@ nav ul li a:hover{
 
   .emergency {
     border-radius: 70%;
+    border-style: solid;
+    border-width: large;
+    border-color: darkgrey;
   }
 /* input#go {
     background-color: #4c9ed9;
@@ -166,7 +204,7 @@ nav ul li a:hover{
     border-radius: 4px !important;
     padding: 25px;
     font-size: 25px !important;
-    background-color: #50424d;
+    background-color:grey;
     display: flex;
     flex-direction: column;
     align-items: center;
