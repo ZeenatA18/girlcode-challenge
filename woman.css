@@ -158,11 +158,11 @@ a {
 	color: palevioletred;
 }
 
-.emergency{
+/* .emergency{
     background-color: #5e125f;
     color: white;
     /* opacity: 0.5; */
-    border: none;
+    /* border: none;
     padding: 5px;
     font-size: 31px;
     height: 300px;
@@ -175,13 +175,13 @@ a {
     border-width: large;
     border-color: rgb(44, 3, 34);
   
-  }
+  } */ 
 
-  .emergency:active {
+  /* .emergency:active {
     background-color:rgb(103, 142, 106);
     box-shadow: 0 0 2px rgb(85, 40, 168);
     transform: translateY(2px);
-  }
+  } */
   
   .emergency :not(:first-child) {
     margin-top: 10px;

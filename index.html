@@ -57,9 +57,36 @@ l>
                 <!-- <div class="emergency"><input type="button" value="New On This Site ?" >  -->
                 <div class="emergencydiv">
 
-                    
+                    <style>
+                        .emergency {
+                          background: hsl(340deg 100% 32%);
+                          border-radius: 12px;
+                          border: none;
+                          padding: 0;
+                          cursor: pointer;
+                          outline-offset: 4px;
+                          
+                        }
+                        .front {
+                          display: block;
+                          padding: 12px 42px;
+                          border-radius: 12px;
+                          font-size: 1.25rem;
+                          background: hsl(345deg 100% 47%);
+                          color: white;
+                          transform: translateY(-6px);
+                        }
+                      
+                        .emergency:active .front {
+                          transform: translateY(-2px);
+                        }
+                      </style>                    
 
-                   <button class="emergency">SOS</button>
+                   <button class="emergency">
+                    <span class="front">
+                        SOS
+                      </span>
+                   </button>
                    <!-- Contacto con WhatsApp</a> -->
 
 
