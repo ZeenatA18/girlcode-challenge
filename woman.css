@@ -12,18 +12,7 @@ body{
     justify-content: center;
   }
 
-.registration{
-    margin-left: auto;
-    margin-right: auto;
-    /* background:url(Pictures/istockphoto-861188910-612x612.jpg) no-repeat; */
-    background-position: center center;
-    background-size: cover; 
-    height: auto;
-    width: 100%;
-  
-        
-      
-}
+ 
 
 .logo i{
     height: 55px;
@@ -75,54 +64,6 @@ nav ul li a:hover{
     box-shadow: 0 0 10px #f28482;
 }
 
-/* nav .hamb{
-    width: 35px;
-    height: 24px;
-    right: 3%;
-    top:60px ;
-    z-index: 5;
-    /* background: transparent; */
-    /* position: absolute;
-    cursor:pointer ;
-    display: none; */
-    /* background-color: white; */
-/* } */
-/* nav .hamb span{
-    display: block;
-    background: #c41d11;
-    width: 100%;
-    height: 3px;
-    transition: .3s;
-    /* transition-property: transform opacity ; */
-/* } */
-/* nav .hamb span:nth-child(2){
-    margin: 7px 0px;
-} */
-/* hr{
-    border-color: pink;
-} */
-
-/* nav .nav-list{
-    list-style: none;
-
-} */
-/* nav .nav-list li{
-    display: inline-block;
-} */
-
-/* nav .nav-list li a{
-    display: inline-block;
-    color:black;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 15px;
-    font-weight:600 ;
-
-} */
-/* .emergencydiv{
-    width: 50px;
-    height: 60px;
-} */
 body {
 	text-align: center;
 	color: palevioletred;
@@ -233,30 +174,10 @@ a {
 .butns {
     display: flex;
     flex-direction: row;
-    justify-items:self-end;
+    justify-items: self-end;
   
   }
-nav .nav-list li:not(:last-child) a:hover{
-    color: #c41d11;
-    transition: .4s;
 
-}
-nav .nav-list li.btn a{
-    display: inline-block;
-    /* background: transparent; */
-    border: 2px solid #c41d11;
-    padding: 9px 28px;
-    border-radius:30px;
-    line-height: 1.3;
-    color: #c41d11;
-    font-weight: 500;
-}
-nav .nav-list li.btn:hover a{
-    background: #c41d11 ;
-    /* color: white; */
-    border: 2px solid transparent;
-    transition: .4s;
-}
 @media screen and (max-width :1000px) {
     nav .hamb{
         display: initial;
