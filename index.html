@@ -1,5 +1,4 @@
-<!DOCTYPE htm
-l>
+<!DOCTYPE htm l>
 <html lang="en">
 
 <head>
@@ -26,7 +25,7 @@ l>
 
     <header>
 
-        
+
 
 
         <nav>
@@ -51,164 +50,170 @@ l>
         </nav> -->
     </header>
     <div class="container">
-    <section class="home" id="home">
-       
-            <div class="buttons">
-                <!-- <div class="emergency"><input type="button" value="New On This Site ?" >  -->
-                <div class="emergencydiv">
+        <section class="home" id="home">
 
+            <div class="buttons">
+              
+                <div class="emergencydiv">
+                    <div class="ccc" style="font-size: medium; padding: 20px;" >Click on the button to send alerting message!!</div>
                     <style>
                         .emergency {
-                          background: hsl(340deg 100% 32%);
-                          border-radius: 12px;
-                          border: none;
-                          padding: 0;
-                          cursor: pointer;
-                          outline-offset: 4px;
-                          
-                        }
-                        .front {
-                          display: block;
-                          padding: 12px 42px;
-                          border-radius: 12px;
-                          font-size: 1.25rem;
-                          background: hsl(345deg 100% 47%);
-                          color: white;
-                          transform: translateY(-6px);
-                        }
-                      
-                        .emergency:active .front {
-                          transform: translateY(-2px);
-                        }
-                      </style>                    
+                            margin-left: 40px;
+                            background: rgb(145, 21, 21);
+                            border-radius: 48px;
+                            border: none;
+                            padding: 0;
+                            cursor: pointer;
+                            outline-offset: 8px;
+                            border-radius: 90%;
+                            /* border-style: solid; */
+                            border-width: 150px;
+                            height: 110px;
 
-                   <button class="emergency">
-                    <span class="front">
-                        SOS
-                      </span>
-                   </button>
-                   <!-- Contacto con WhatsApp</a> -->
+                        }
+
+                        .front {
+                            display: block;
+                            padding: 20px 52px;
+                           
+                            border-radius: 12px;
+                            font-size: 1.25rem;
+                            background: hsl(345deg 100% 47%);
+                            /* color: white; */
+                            transform: translateY(-6px);
+                            border-radius: 90%;
+                            /* border-style: solid; */
+                            height: 110px;
+                            border-width: 150px;
+                        }
+
+                        .emergency:active .front {
+                            transform: translateY(-2px);
+                        }
+                    </style>
+
+                    <button class="emergency">
+                        <span class="front" style="padding-top:40px ;" >
+                            SOS
+                        </span>
+                    </button>
+                    <!-- Contacto con WhatsApp</a> -->
 
 
                 </div>
                 <label for="media">
                     recording type
-                    </label>
-                    <select id="media"> -->
-                         <option value="choose-an-option"> 
-                            Choose an option
-                        </option> -->
-                        <option value="vid">Video</option>
-                        <option value="aud">Audio</option>
-                        <!-- <div class="languages"  id="media">
+                </label>
+                <select id="media"> -->
+                    <option value="choose-an-option">
+                        Choose an option
+                    </option> -->
+                    <option value="vid">Video</option>
+                    <option value="aud">Audio</option>
+                    <!-- <div class="languages"  id="media">
                         <input type="radio" name="radioButn"   value="vidtype">Video
                         <input type="radio" name="radioButn"   value="audtype">Audio
                     </div>  -->
-                    </select>
+                </select>
 
 
 
-                    
-                
-                    <div class="display-none" id="vid-recorder">
-                        <h3>Record Video </h3>
-                        <video autoplay id="web-cam-container"
-                            style="background-color: black;">
-                            Your browser doesn't support
-                            the video tag
-                        </video>
-                
-                        <div class="recording" id="vid-record-status">
-                    
-                        </div>
-                
+
+
+                <div class="display-none" id="vid-recorder">
+                    <h3>Record Video </h3>
+                    <video autoplay id="web-cam-container" style="background-color: black;">
                         
-                        <button type="button" id="start-vid-recording"
-                            onclick="startRecording(this,
+                    </video>
+
+                    <div class="recording" id="vid-record-status">
+
+                    </div>
+
+
+                     <button type="button" id="start-vid-recording" onclick="startRecording(this,
                             document.getElementById('stop-vid-recording'))">
-                            Start video recording
-                        </button>
-                
-                        
-                        <button type="button" id="stop-vid-recording"
-                            disabled onclick="stopRecording(this,
+                         Record Video
+                    </button> 
+
+
+                    <button type="button" id="stop-vid-recording" disabled onclick="stopRecording(this,
                             document.getElementById('start-vid-recording'))">
-                            Stop video recording
-                        </button>
-                
-                        <!--The video element will be created using
+                        Record Audio
+                    </button>
+
+                    <!--The video element will be created using
                             JavaScript and contains recorded video-->
-                        <!-- <video id="recorded-video" controls>
+                    <!-- <video id="recorded-video" controls>
                             Your browser doesn't support the video tag
                         </video> -->
-                
-                        <!-- The below link will let the
+
+                    <!-- The below link will let the
                             users download the recorded video -->
-                        <!-- <a href="" > Download it! </a> -->
+                    <!-- <a href="" > Download it! </a> -->
+                </div>
+
+                <div class="display-none" id="aud-recorder">
+                    <h3> Record Audio</h3>
+
+                    <div class="recording" id="aud-record-status">
+
+                       
                     </div>
-                
-                    <div class="display-none" id="aud-recorder">
-                        <h3> Record Audio</h3>
-                
-                        <div class="recording" id="aud-record-status">
-                            
-                            button to start recording
-                        </div>
-                
-                        <button type="button" id="start-aud-recording"
-                            onclick="startRecording(this,
+
+                    <button type="button" id="start-aud-recording" onclick="startRecording(this,
                             document.getElementById('stop-aud-recording'))">
-                            Start recording
-                        </button>
-                
-                        <button type="button" id="stop-aud-recording"
-                            disabled onclick="stopRecording(this,
+                        Start recording
+                    </button>
+
+                    <button type="button" id="stop-aud-recording" disabled onclick="stopRecording(this,
                             document.getElementById('start-aud-recording'))">
-                            Stop recording
-                        </button>
-                
-                        <!-- The audio element will contain the
+                        Stop recording
+                    </button>
+
+                    <!-- The audio element will contain the
                             recorded audio and will be created
                             using Javascript -->
-                        <!-- <audio id="recorded-audio"
+                    <!-- <audio id="recorded-audio"
                             controls></audio> -->
-                
-                        <!-- The below link will let the users
+
+                    <!-- The below link will let the users
                             download the recorded audio -->
-                        <!-- <a href="" > Download it! </a> -->
-                    </div>
-                
-                   
+                    <!-- <a href="" > Download it! </a> -->
+                </div>
+
+
             </div>
 
             <div class="butns">
-            <button type="submit" style="width: 100px;" class="submit">CALL</button>
-            <a href="https://api.whatsapp.com/send?phone=27634364578&text=Help" > <button type="reset" class="reset"  style="width: 100px;  margin-right:100px ;">TEXT</button></a> 
-        </div>
+                <button type="submit" style="width: 100px;" class="submit">CALL</button>
+                <a href="https://api.whatsapp.com/send?phone=27634364578&text=Help"> <button type="reset" class="reset"
+                        style="width: 100px;  margin-right:100px ;">TEXT</button></a>
+            </div>
 
-    </section>
-
-
-    <section class="registration" id="registration">
-        <div class="button-section">
+        </section>
 
 
-        </div>
-    </section>
+        <section class="registration" id="registration">
+            <div class="button-section">
 
+
+            </div>
+        </section>
+
+
+
+        <section class="Chatspace" id="chatspace"></section>
+
+
+
+    </div>
 
 
     <section class="Chatspace" id="chatspace"></section>
 
 
-
-    </div>
-   
-
-<section class="Chatspace" id="chatspace"></section>
-       
-
-<script src="./js/woman.dom.js"></script>
+    <script src="./js/woman.dom.js"></script>
 
 </body>
 

@@ -1,9 +1,11 @@
 body{
-    background-image: url(./images/w.jpeg)
+    background-color: #EDDDD4;
+    background-position: center center;
+    background-size: cover;
 }
 
 .container {
-
+   
     min-height: 100vh;
     height: auto;
     display: flex;
@@ -75,54 +77,6 @@ nav ul li a:hover{
     box-shadow: 0 0 10px #f28482;
 }
 
-/* nav .hamb{
-    width: 35px;
-    height: 24px;
-    right: 3%;
-    top:60px ;
-    z-index: 5;
-    /* background: transparent; */
-    /* position: absolute;
-    cursor:pointer ;
-    display: none; */
-    /* background-color: white; */
-/* } */
-/* nav .hamb span{
-    display: block;
-    background: #c41d11;
-    width: 100%;
-    height: 3px;
-    transition: .3s;
-    /* transition-property: transform opacity ; */
-/* } */
-/* nav .hamb span:nth-child(2){
-    margin: 7px 0px;
-} */
-/* hr{
-    border-color: pink;
-} */
-
-/* nav .nav-list{
-    list-style: none;
-
-} */
-/* nav .nav-list li{
-    display: inline-block;
-} */
-
-/* nav .nav-list li a{
-    display: inline-block;
-    color:black;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 15px;
-    font-weight:600 ;
-
-} */
-/* .emergencydiv{
-    width: 50px;
-    height: 60px;
-} */
 body {
 	text-align: center;
 	color: palevioletred;
@@ -158,11 +112,11 @@ a {
 	color: palevioletred;
 }
 
-/* .emergency{
+.emergency{
     background-color: #5e125f;
     color: white;
     /* opacity: 0.5; */
-    /* border: none;
+    border: none;
     padding: 5px;
     font-size: 31px;
     height: 300px;
@@ -175,36 +129,19 @@ a {
     border-width: large;
     border-color: rgb(44, 3, 34);
   
-  } */ 
+  }
 
-  /* .emergency:active {
+  .emergency:active {
     background-color:rgb(103, 142, 106);
     box-shadow: 0 0 2px rgb(85, 40, 168);
     transform: translateY(2px);
-  } */
+  }
   
   .emergency :not(:first-child) {
     margin-top: 10px;
   }
 
-  /* .emergency {
-    border-radius: 70%;
-    border-style: solid;
-    border-width: large;
-    border-color: darkgrey;
-  } */
-/* input#go {
-    background-color: #4c9ed9;
-    color: #ffffff;
-    padding: 20px 40px;
-    border: 1px solid #111;
-  }
 
-  input#go:hover {
-    background-color: #ffffff;
-    color: #4c9ed9;
-    border: 1px solid #111;
-  } */
 
 .buttons{
     margin-bottom: 10px;
@@ -213,7 +150,8 @@ a {
     border-radius: 4px !important;
     padding: 25px;
     font-size: 25px !important;
-    background-color:grey; 
+    background-color:grey;
+	opacity: 0.5;
     display: flex;
     flex-direction: column;
     align-items: center;
